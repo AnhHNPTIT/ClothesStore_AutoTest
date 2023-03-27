@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Đơn hàng của tôi - Clothes Store
+Đơn hàng của tôi - Fashion Store
 @endsection
 
 @section('home')

@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->integer('pathology_id')->nullable(); // id benh hoc
             $table->integer('pharmacology_id')->nullable(); // dang duoc ly
             $table->integer('pharmacy_id')->nullable(); // dang bao che
-            $table->integer('manufacturer_id')->nullable(); // nha san xuat
+            $table->integer('brand_id')->nullable(); // thuong hieu
             $table->integer('support_treatment_id')->nullable(); // nhom ho tro dieu tri
             $table->integer('utility_id')->nullable(); // nhom cong dung
             $table->string('registration_number')->nullable(); // so dang ki

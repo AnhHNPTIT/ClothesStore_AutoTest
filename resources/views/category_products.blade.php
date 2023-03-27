@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Danh mục sản phẩm - Clothes Store
+Danh mục sản phẩm - Fashion Store
 @endsection
 
 @section('css')
@@ -395,8 +395,8 @@ Danh mục sản phẩm - Clothes Store
 
                                                                         <div class="padding-top20">
                                                                             <ul class="em-catalog-navigation vertical">
-                                                                                @if(isset($menu_vitamin_products_asc))
-                                                                                @foreach($menu_vitamin_products_asc as $i => $item)
+                                                                                @if(isset($menu_women_products_asc))
+                                                                                @foreach($menu_women_products_asc as $i => $item)
                                                                                 @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                                         @else
@@ -417,8 +417,8 @@ Danh mục sản phẩm - Clothes Store
                                             <li class="menu-item-text menu-item-depth-3  ">
                                                 <div class="padding-top20">
                                                     <ul class="em-catalog-navigation vertical">
-                                                        @if(isset($menu_vitamin_products_asc))
-                                                        @foreach($menu_vitamin_products_asc as $i => $item)
+                                                        @if(isset($menu_women_products_asc))
+                                                        @foreach($menu_women_products_asc as $i => $item)
                                                         @if(8 <= $i) <li class="level0 nav-1 first">
                                                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                 @else
@@ -453,8 +453,8 @@ Danh mục sản phẩm - Clothes Store
 
                                                             <div class="padding-top20">
                                                                 <ul class="em-catalog-navigation vertical">
-                                                                    @if(isset($menu_energy_products_asc))
-                                                                    @foreach($menu_energy_products_asc as $i => $item)
+                                                                    @if(isset($menu_men_products_asc))
+                                                                    @foreach($menu_men_products_asc as $i => $item)
                                                                     @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                         @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                             @else
@@ -475,8 +475,8 @@ Danh mục sản phẩm - Clothes Store
                                     <li class="menu-item-text menu-item-depth-3  ">
                                         <div class="padding-top20">
                                             <ul class="em-catalog-navigation vertical">
-                                                @if(isset($menu_energy_products_asc))
-                                                @foreach($menu_energy_products_asc as $i => $item)
+                                                @if(isset($menu_men_products_asc))
+                                                @foreach($menu_men_products_asc as $i => $item)
                                                 @if(8 <= $i) <li class="level0 nav-1 first">
                                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                         @else
@@ -510,8 +510,8 @@ Danh mục sản phẩm - Clothes Store
 
                                                     <div class="padding-top20">
                                                         <ul class="em-catalog-navigation vertical">
-                                                            @if(isset($menu_fiber_products_asc))
-                                                            @foreach($menu_fiber_products_asc as $i => $item)
+                                                            @if(isset($menu_kid_products_asc))
+                                                            @foreach($menu_kid_products_asc as $i => $item)
                                                             @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                 @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                     @else
@@ -532,8 +532,8 @@ Danh mục sản phẩm - Clothes Store
                             <li class="menu-item-text menu-item-depth-3  ">
                                 <div class="padding-top20">
                                     <ul class="em-catalog-navigation vertical">
-                                        @if(isset($menu_fiber_products_asc))
-                                        @foreach($menu_fiber_products_asc as $i => $item)
+                                        @if(isset($menu_kid_products_asc))
+                                        @foreach($menu_kid_products_asc as $i => $item)
                                         @if(8 <= $i) <li class="level0 nav-1 first">
                                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                 @else
@@ -567,8 +567,8 @@ Danh mục sản phẩm - Clothes Store
 
                                             <div class="padding-top20">
                                                 <ul class="em-catalog-navigation vertical">
-                                                    @if(isset($menu_special_products_asc))
-                                                    @foreach($menu_special_products_asc as $i => $item)
+                                                    @if(isset($menu_other_products_asc))
+                                                    @foreach($menu_other_products_asc as $i => $item)
                                                     @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                         @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                             @else
@@ -589,8 +589,8 @@ Danh mục sản phẩm - Clothes Store
                     <li class="menu-item-text menu-item-depth-3  ">
                         <div class="padding-top20">
                             <ul class="em-catalog-navigation vertical">
-                                @if(isset($menu_special_products_asc))
-                                @foreach($menu_special_products_asc as $i => $item)
+                                @if(isset($menu_other_products_asc))
+                                @foreach($menu_other_products_asc as $i => $item)
                                 @if(8 <= $i) <li class="level0 nav-1 first">
                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                         @else
@@ -622,7 +622,7 @@ Danh mục sản phẩm - Clothes Store
 <div class="em-line-01 block block-layered-nav">
 
     <div class="em-block-title" style="text-align : center;">
-        <strong><span style="color : #fff;">Nhà sản xuất</span></strong>
+        <strong><span style="color : #fff;">Thương hiệu</span></strong>
     </div>
     <div class="block-content" id="brand-scroll" style="padding-bottom : 20px; margin-bottom : 10px;">
         <ul id="narrow-by-list">
@@ -631,7 +631,7 @@ Danh mục sản phẩm - Clothes Store
                 @foreach($brands as $value)
                 <li style="line-height : 30px; margin-top : 10px;">
                     <label class="check-sty" style="line-height : 30px;">
-                        <input type="checkbox" name="facturer" value="{{$value->slug}}" @if(isset($check_manufactures[$value->id])) {{'checked'}} @endif >
+                        <input type="checkbox" name="facturer" value="{{$value->slug}}" @if(isset($check_brands[$value->id])) {{'checked'}} @endif >
                         <span class="checkmark"></span>
                         {{$value->name}}
                     </label>
@@ -740,53 +740,53 @@ Danh mục sản phẩm - Clothes Store
     </div>
 
     @if($title == "Nữ")
-    @if(isset($price_sale_min_vitamin_product) && isset($price_sale_max_vitamin_product))
+    @if(isset($price_sale_min_women_product) && isset($price_sale_max_women_product))
     <div class="block-content" style="text-align : center;">
-        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_vitamin_product*1000 }}" data-slider-max="{{ $price_sale_max_vitamin_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
+        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_women_product*1000 }}" data-slider-max="{{ $price_sale_max_women_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
         <div class="" style="font-size : 12px;">
             Giá từ:
-            <span class="from">{{number_format($price_sale_min_vitamin_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="from">{{number_format($price_sale_min_women_product*1000 ,0 ,'.' ,'.')}} VND</span>
             —
-            <span class="to">{{number_format($price_sale_max_vitamin_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="to">{{number_format($price_sale_max_women_product*1000 ,0 ,'.' ,'.')}} VND</span>
         </div>
         <button type="button" class="button btn-price-slider" style="margin-top : 15px; font-size : 13px;">Lọc theo giá</button>
     </div>
     @endif
     @elseif($title == "Nam")
-    @if(isset($price_sale_min_energy_product) && isset($price_sale_max_energy_product))
+    @if(isset($price_sale_min_men_product) && isset($price_sale_max_men_product))
     <div class="block-content" style="text-align : center;">
-        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_energy_product*1000 }}" data-slider-max="{{ $price_sale_max_energy_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
+        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_men_product*1000 }}" data-slider-max="{{ $price_sale_max_men_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
         <div class="" style="font-size : 12px;">
             Giá từ:
-            <span class="from">{{number_format($price_sale_min_energy_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="from">{{number_format($price_sale_min_men_product*1000 ,0 ,'.' ,'.')}} VND</span>
             —
-            <span class="to">{{number_format($price_sale_max_energy_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="to">{{number_format($price_sale_max_men_product*1000 ,0 ,'.' ,'.')}} VND</span>
         </div>
         <button type="button" class="button btn-price-slider" style="margin-top : 15px; font-size : 13px;">Lọc theo giá</button>
     </div>
     @endif
     @elseif($title == "Trẻ em")
-    @if(isset($price_sale_min_fiber_product) && isset($price_sale_max_fiber_product))
+    @if(isset($price_sale_min_kid_product) && isset($price_sale_max_kid_product))
     <div class="block-content" style="text-align : center;">
-        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_fiber_product*1000 }}" data-slider-max="{{ $price_sale_max_fiber_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
+        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_kid_product*1000 }}" data-slider-max="{{ $price_sale_max_kid_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
         <div class="" style="font-size : 12px;">
             Giá từ:
-            <span class="from">{{number_format($price_sale_min_fiber_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="from">{{number_format($price_sale_min_kid_product*1000 ,0 ,'.' ,'.')}} VND</span>
             —
-            <span class="to">{{number_format($price_sale_max_fiber_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="to">{{number_format($price_sale_max_kid_product*1000 ,0 ,'.' ,'.')}} VND</span>
         </div>
         <button type="button" class="button btn-price-slider" style="margin-top : 15px; font-size : 13px;">Lọc theo giá</button>
     </div>
     @endif
     @elseif($title == "Khác")
-    @if(isset($price_sale_min_special_product) && isset($price_sale_max_special_product))
+    @if(isset($price_sale_min_other_product) && isset($price_sale_max_other_product))
     <div class="block-content" style="text-align : center;">
-        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_special_product*1000 }}" data-slider-max="{{ $price_sale_max_special_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
+        <input id="price-slider-amount" type="text" value="" class="slider form-control" data-slider-min="{{ $price_sale_min_other_product*1000 }}" data-slider-max="{{ $price_sale_max_other_product*1000 }}" data-slider-step="1" <?php if (isset($min_price) && isset($max_price)) { ?> data-slider-value="[<?php echo $min_price * 1000; ?>,<?php echo $max_price * 1000; ?>]" <?php } else { ?> data-slider-value="[20000,30000]" <?php } ?> data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
         <div class="" style="font-size : 12px;">
             Giá từ:
-            <span class="from">{{number_format($price_sale_min_special_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="from">{{number_format($price_sale_min_other_product*1000 ,0 ,'.' ,'.')}} VND</span>
             —
-            <span class="to">{{number_format($price_sale_max_special_product*1000 ,0 ,'.' ,'.')}} VND</span>
+            <span class="to">{{number_format($price_sale_max_other_product*1000 ,0 ,'.' ,'.')}} VND</span>
         </div>
         <button type="button" class="button btn-price-slider" style="margin-top : 15px; font-size : 13px;">Lọc theo giá</button>
     </div>

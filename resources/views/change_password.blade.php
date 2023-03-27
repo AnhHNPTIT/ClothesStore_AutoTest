@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Đổi mật khẩu - Clothes Store
+Đổi mật khẩu - Fashion Store
 @endsection
 
 @section('js')

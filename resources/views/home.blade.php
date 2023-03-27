@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Clothes Store
+Fashion Store
 @endsection
 
 @section('js')
@@ -95,8 +95,8 @@ Clothes Store
 
                                                                 <div class="padding-top20">
                                                                     <ul class="em-catalog-navigation vertical">
-                                                                        @if(isset($menu_vitamin_products_asc))
-                                                                        @foreach($menu_vitamin_products_asc as $i => $item)
+                                                                        @if(isset($menu_women_products_asc))
+                                                                        @foreach($menu_women_products_asc as $i => $item)
                                                                         @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                                 @else
@@ -117,8 +117,8 @@ Clothes Store
                                     <li class="menu-item-text menu-item-depth-3  ">
                                         <div class="padding-top20">
                                             <ul class="em-catalog-navigation vertical">
-                                                @if(isset($menu_vitamin_products_asc))
-                                                @foreach($menu_vitamin_products_asc as $i => $item)
+                                                @if(isset($menu_women_products_asc))
+                                                @foreach($menu_women_products_asc as $i => $item)
                                                 @if(8 <= $i) <li class="level0 nav-1 first">
                                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                         @else
@@ -153,8 +153,8 @@ Clothes Store
 
                                                     <div class="padding-top20">
                                                         <ul class="em-catalog-navigation vertical">
-                                                            @if(isset($menu_energy_products_asc))
-                                                            @foreach($menu_energy_products_asc as $i => $item)
+                                                            @if(isset($menu_men_products_asc))
+                                                            @foreach($menu_men_products_asc as $i => $item)
                                                             @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                                 @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                                     @else
@@ -175,8 +175,8 @@ Clothes Store
                             <li class="menu-item-text menu-item-depth-3  ">
                                 <div class="padding-top20">
                                     <ul class="em-catalog-navigation vertical">
-                                        @if(isset($menu_energy_products_asc))
-                                        @foreach($menu_energy_products_asc as $i => $item)
+                                        @if(isset($menu_men_products_asc))
+                                        @foreach($menu_men_products_asc as $i => $item)
                                         @if(8 <= $i) <li class="level0 nav-1 first">
                                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                 @else
@@ -210,8 +210,8 @@ Clothes Store
 
                                             <div class="padding-top20">
                                                 <ul class="em-catalog-navigation vertical">
-                                                    @if(isset($menu_fiber_products_asc))
-                                                    @foreach($menu_fiber_products_asc as $i => $item)
+                                                    @if(isset($menu_kid_products_asc))
+                                                    @foreach($menu_kid_products_asc as $i => $item)
                                                     @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                         @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                             @else
@@ -232,8 +232,8 @@ Clothes Store
                     <li class="menu-item-text menu-item-depth-3  ">
                         <div class="padding-top20">
                             <ul class="em-catalog-navigation vertical">
-                                @if(isset($menu_fiber_products_asc))
-                                @foreach($menu_fiber_products_asc as $i => $item)
+                                @if(isset($menu_kid_products_asc))
+                                @foreach($menu_kid_products_asc as $i => $item)
                                 @if(8 <= $i) <li class="level0 nav-1 first">
                                     @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                         @else
@@ -267,8 +267,8 @@ Clothes Store
 
                                     <div class="padding-top20">
                                         <ul class="em-catalog-navigation vertical">
-                                            @if(isset($menu_special_products_asc))
-                                            @foreach($menu_special_products_asc as $i => $item)
+                                            @if(isset($menu_other_products_asc))
+                                            @foreach($menu_other_products_asc as $i => $item)
                                             @if(0 <= $i && $i < 8) <li class="level0 nav-1">
                                                 @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                                     @else
@@ -289,8 +289,8 @@ Clothes Store
             <li class="menu-item-text menu-item-depth-3  ">
                 <div class="padding-top20">
                     <ul class="em-catalog-navigation vertical">
-                        @if(isset($menu_special_products_asc))
-                        @foreach($menu_special_products_asc as $i => $item)
+                        @if(isset($menu_other_products_asc))
+                        @foreach($menu_other_products_asc as $i => $item)
                         @if(8 <= $i) <li class="level0 nav-1 first">
                             @if(strlen($item->name) < 30) <a href="{{url('san-pham/'.$item->slug)}}"> <span>{{$item->name}}</span> </a>
                                 @else
@@ -361,8 +361,8 @@ Clothes Store
                                                     <div class="emcatalog-desktop-6">
                                                         <div class="products-grid">
 
-                                                            @if(isset($new_vitamin_products))
-                                                            @foreach($new_vitamin_products as $item)
+                                                            @if(isset($new_women_products))
+                                                            @foreach($new_women_products as $item)
                                                             <div class="item last" style="  ">
 
                                                                 @if($item->price_sale < $item->price)
@@ -424,31 +424,6 @@ Clothes Store
                                                                             <div class="f-fix">
                                                                                 <!--product name-->
                                                                                 <h3 style="min-height: 58px; height:58px;" class="product-name"><a href="/san-pham/{{$item->slug}}" style="text-transform: capitalize;"> {{$item->name}} </a></h3>
-
-                                                                                <div class="price-box">
-                                                                                    @if($item->quantity > 0)
-                                                                                    <!-- <div style="background:#6df31a; height:30px; padding-top:6px; color:#fff; font-weight:bold; font-size:12px; text-align:center; text-transform:uppercase;">
-                                                                                                        còn hàng
-                                                                                                    </div> -->
-                                                                                    @else
-                                                                                    <div style="background:#ff0000; height:30px; padding-top:6px; color:#fff; font-weight:bold; font-size:12px; text-align:center; text-transform:uppercase;">
-                                                                                        hết hàng
-                                                                                    </div>
-                                                                                    @endif
-                                                                                    <p class="old-price">
-                                                                                        <span class="price" id="old-price-182-emprice-e28d8be0787e9d8ae65c6afe74f8df0a">
-                                                                                            {{number_format($item->price*1000 ,0 ,'.' ,'.')}} VND
-                                                                                        </span>
-                                                                                    </p>
-                                                                                    <br>
-
-                                                                                    <p class="special-price">
-                                                                                        <span class="price" content="60" id="product-price-182-emprice-e28d8be0787e9d8ae65c6afe74f8df0a" style="color: #0000FF;">
-                                                                                            {{number_format($item->price_sale*1000 ,0 ,'.' ,'.')}} VND
-                                                                                        </span>
-                                                                                    </p>
-                                                                                </div>
-
                                                                             </div>
                                                                         </div><!-- /.product-shop -->
                                                                     </div>
@@ -488,25 +463,6 @@ Clothes Store
                                                                             <div class="f-fix">
                                                                                 <!--product name-->
                                                                                 <h3 style="min-height: 58px; height:58px;" class="product-name"><a href="{{ url('/san-pham/'.$item->slug) }}" style="text-transform: capitalize;"> {{$item->name}} </a></h3>
-
-                                                                                <!--product price-->
-                                                                                <div class="price-box">
-                                                                                    @if($item->quantity > 0)
-                                                                                    <!-- <div style="background:#6df31a; height:30px; padding-top:6px; color:#fff; font-weight:bold; font-size:12px; text-align:center; text-transform:uppercase;">
-                                                                                                        còn hàng
-                                                                                                    </div> -->
-                                                                                    @else
-                                                                                    <div style="background:#ff0000; height:30px; padding-top:6px; color:#fff; font-weight:bold; font-size:12px; text-align:center; text-transform:uppercase;">
-                                                                                        hết hàng
-                                                                                    </div>
-                                                                                    @endif
-                                                                                    <p class="special-price">
-                                                                                        <span class="price" content="60" id="product-price-182-emprice-e28d8be0787e9d8ae65c6afe74f8df0a" style="color: #0000FF; padding-top:20px;">
-                                                                                            {{number_format($item->price_sale*1000 ,0 ,'.' ,'.')}} VND
-                                                                                        </span>
-                                                                                    </p>
-                                                                                </div>
-
                                                                             </div>
                                                                         </div><!-- /.product-shop -->
                                                                     </div>
@@ -544,8 +500,8 @@ Clothes Store
                                                     <div class="emcatalog-desktop-6">
                                                         <div class="products-grid ">
 
-                                                            @if(isset($new_energy_products))
-                                                            @foreach($new_energy_products as $item)
+                                                            @if(isset($new_men_products))
+                                                            @foreach($new_men_products as $item)
                                                             <div class="item last" style="  ">
 
                                                                 @if($item->price_sale < $item->price)
@@ -607,31 +563,6 @@ Clothes Store
                                                                             <div class="f-fix">
                                                                                 <!--product name-->
                                                                                 <h3 style="min-height: 58px; height:58px;" class="product-name"><a href="/san-pham/{{$item->slug}}" style="text-transform: capitalize;"> {{$item->name}} </a></h3>
-
-                                                                                <div class="price-box">
-                                                                                    @if($item->quantity > 0)
-                                                                                    <!-- <div style="background:#6df31a; height:30px; padding-top:6px; color:#fff; font-weight:bold; font-size:12px; text-align:center; text-transform:uppercase;">
-                                                                                                    còn hàng
-                                                                                                </div> -->
-                                                                                    @else
-                                                                                    <div style="background:#ff0000; height:30px; padding-top:6px; color:#fff; font-weight:bold; font-size:12px; text-align:center; text-transform:uppercase;">
-                                                                                        hết hàng
-                                                                                    </div>
-                                                                                    @endif
-                                                                                    <p class="old-price">
-                                                                                        <span class="price" id="old-price-182-emprice-e28d8be0787e9d8ae65c6afe74f8df0a">
-                                                                                            {{number_format($item->price*1000 ,0 ,'.' ,'.')}} VND
-                                                                                        </span>
-                                                                                    </p>
-                                                                                    <br>
-
-                                                                                    <p class="special-price">
-                                                                                        <span class="price" content="60" id="product-price-182-emprice-e28d8be0787e9d8ae65c6afe74f8df0a" style="color: #0000FF;">
-                                                                                            {{number_format($item->price_sale*1000 ,0 ,'.' ,'.')}} VND
-                                                                                        </span>
-                                                                                    </p>
-                                                                                </div>
-
                                                                             </div>
                                                                         </div><!-- /.product-shop -->
                                                                     </div>
@@ -726,8 +657,8 @@ Clothes Store
                                                     <div class="emcatalog-desktop-6">
                                                         <div class="products-grid ">
 
-                                                            @if(isset($new_fiber_products))
-                                                            @foreach($new_fiber_products as $item)
+                                                            @if(isset($new_kid_products))
+                                                            @foreach($new_kid_products as $item)
                                                             <div class="item last" style="  ">
 
                                                                 @if($item->price_sale < $item->price)
@@ -898,8 +829,8 @@ Clothes Store
                                             <div class="emcatalog-desktop-6">
                                                 <div class="products-grid ">
 
-                                                    @if(isset($new_special_products))
-                                                    @foreach($new_special_products as $item)
+                                                    @if(isset($new_other_products))
+                                                    @foreach($new_other_products as $item)
                                                     <div class="item last" style="  ">
 
                                                         @if($item->price_sale < $item->price)
@@ -1293,7 +1224,7 @@ Clothes Store
                 </p>
                 <div class="em-ads-content">
                     <h4 class="primary em-text-upercase">Đội ngũ dược sĩ</h4>
-                    <p>Clothes Store tự hào khi sở hữu đội ngũ dược sĩ hàng đầu tại Việt Nam</p>
+                    <p>Fashion Store tự hào khi sở hữu đội ngũ dược sĩ hàng đầu tại Việt Nam</p>
                 </div>
             </div>
         </div><!-- /.em-wrapper-ads-item -->
@@ -1303,7 +1234,7 @@ Clothes Store
                 </p>
                 <div class="em-ads-content">
                     <h4 class="primary em-text-upercase">Cửa hàng trực tuyến</h4>
-                    <p>Dễ dàng đặt hàng online nhanh chóng trên Clothes Store thông qua mọi thiết bị</p>
+                    <p>Dễ dàng đặt hàng online nhanh chóng trên Fashion Store thông qua mọi thiết bị</p>
                 </div>
             </div>
         </div><!-- /.em-wrapper-ads-item -->

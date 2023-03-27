@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-    Kết quả tìm kiếm - Clothes Store
+    Kết quả tìm kiếm - Fashion Store
 @endsection
 
 @section('js')

@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Chính sách bảo mật - Clothes Store
+Chính sách bảo mật - Fashion Store
 @endsection
 
 @section('css')

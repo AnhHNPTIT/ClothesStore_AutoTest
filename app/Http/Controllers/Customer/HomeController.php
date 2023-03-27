@@ -41,16 +41,14 @@ class HomeController extends Controller
         $product = DB::table('products')
             ->select(
                 'products.*',
-                'brands.name as manufacturer_name',
-                'units.name as unit_name'
+                'brands.name as brand_name',
             )
-            ->join('brands', 'brands.id', '=', 'products.manufacturer_id')
-            ->join('units', 'units.id', '=', 'products.unit_id')
+            ->join('brands', 'brands.id', '=', 'products.brand_id')
             ->where('products.slug', $slug)
             ->where('products.status', 1)
             ->first();
         if (isset($product)) {
-            $related_products = Product::where('manufacturer_id', $product->manufacturer_id)
+            $related_products = Product::where('brand_id', $product->brand_id)
                 ->where('id', '!=', $product->id)->where('status', 1)
                 ->take(12)->get();
 
@@ -68,7 +66,7 @@ class HomeController extends Controller
                     ->where('id', '!=', $product->id)->where('status', 1)->get();
             }
 
-            return view('product_detail', compact('product', 'related_products', 'suggest_products', 'support_treatment', 'utility'));
+            return view('product_detail', compact('product', 'related_products', 'suggest_products'));
         }
     }
 

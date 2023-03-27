@@ -2,7 +2,7 @@
 
 
 @section('title')
-Đăng ký - Clothes Store
+Đăng ký - Fashion Store
 @endsection
 
 
@@ -43,7 +43,7 @@
                 </div>
                 <div class="fieldset">
                     <div class="buttons-set">
-                        <p style="font-size:13px;">Tôi đồng ý với các <a href="{{ url('/quy-dinh-su-dung') }}" style="color:#03A9F4;">điều khoản sử dụng</a> của Clothes Store và cho phép Clothes Store sử dụng thông tin của tôi khi hoàn tất thao tác này.</p>
+                        <p style="font-size:13px;">Tôi đồng ý với các <a href="{{ url('/quy-dinh-su-dung') }}" style="color:#03A9F4;">điều khoản sử dụng</a> của Fashion Store và cho phép Fashion Store sử dụng thông tin của tôi khi hoàn tất thao tác này.</p>
                        
                         <button type="button" class="button btn-register" style="font-size:14px; font-weight:600;"><span><span>ĐĂNG KÝ</span></span>
                         </button>

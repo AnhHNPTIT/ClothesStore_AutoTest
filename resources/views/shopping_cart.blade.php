@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Giỏ hàng - Clothes Store
+Giỏ hàng - Fashion Store
 @endsection
 
 @section('js')

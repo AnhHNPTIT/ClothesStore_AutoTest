@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-    Liên hệ - Clothes Store
+    Liên hệ - Fashion Store
 @endsection
 
 @section('css')
@@ -19,23 +19,23 @@
                 <div class="row">
                     <div class="em-col-main col-sm-24">
                     
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1423582762823!2d105.83637835002351!3d20.98692989451333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac67a2b03f19%3A0xd0b09d018f61dfb4!2zUGjhu5EgTmd1eeG7hW4gVsSDbiBUcuG7l2ksIFBoxrDGoW5nIExp4buHdCwgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1606063045341!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.4680445964095!2d105.73282371427058!3d21.053960585984704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455facd3904b5%3A0x9b4d70ebb9cf5523!2zMjk4IMSQLiBD4bqndSBEaeG7hW4sIEPhuqd1IERp4buFbiwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1679926694815!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         <div class="row" style="margin-top : 50px; margin-bottom : 50px;">
                             
                             <div class="col-sm-12" style="line-height : 28px; padding-top : 25px;">
                                 <div class="em-maps-wrapper" style="margin-b : 25px; padding-bottom : 25px;">
-                                    <h1>Cửa hàng thưc phẩm chức năng Clothes Store</h1>
+                                    <h1>Cửa hàng thưc phẩm chức năng Fashion Store</h1>
                                 </div>
 
                                 <address><span class="fa fa-map-marker secondary2">&nbsp;</span>Địa chỉ: Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội </address>
                                 
-                                <p class="em-phone"><span class="fa fa-user-md secondary2">&nbsp;</span>Phụ trách chuyên môn: <span class="primary">Lê Thị Hương</span>
+                                <p class="em-phone"><span class="fa fa-user-md secondary2">&nbsp;</span>Chủ cửa hàng: <span class="primary">Lê Thị Hương</span>
                                 </p>
 
                                 <p class="em-phone"><span class="fa fa-phone secondary2">&nbsp;</span>Điện thoại: <span class="primary"> 0987 654 321</span>
                                 </p>
                                 
-                                <p class="em-email"><span class="fa fa-envelope secondary2">&nbsp;</span>Email: <span class="secondary2">anhhn@gmail.com</span>
+                                <p class="em-email"><span class="fa fa-envelope secondary2">&nbsp;</span>Email: <span class="secondary2">huonglt@gmail.com</span>
                                 </p>
                             </div><!-- /.col-sm-12 -->
 

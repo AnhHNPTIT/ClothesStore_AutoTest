@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-   	Cập nhật thông tin - Clothes Store
+   	Cập nhật thông tin - Fashion Store
 @endsection
 
 @section('js')

@@ -4,7 +4,7 @@
 @if(isset($product))
 {{$product->name}}
 @else
-Chi tiết sản phẩm - Clothes Store
+Chi tiết sản phẩm - Fashion Store
 @endif
 @endsection
 
@@ -51,10 +51,6 @@ Chi tiết sản phẩm - Clothes Store
                                                         <p style="margin-top : 10px;">Mã sản phẩm : {{$product->code}}</p>
                                                     </div>
 
-                                                    <div>
-                                                        <p style="margin-top : 10px;">Nhà sản xuất : {{$product->manufacturer_name}}</p>
-                                                    </div>
-
                                                     <div class="price-box" style="margin-top : 30px;">
                                                         @if($product->price > $product->price_sale)
                                                         <p class="old-price">
@@ -68,21 +64,10 @@ Chi tiết sản phẩm - Clothes Store
                                                             <span class="price" content="60" id="product-price-182-emprice-e28d8be0787e9d8ae65c6afe74f8df0a" style="color: #0000FF;">
                                                                 {{number_format($product->price_sale*1000 ,0 ,'.' ,'.')}} VND
                                                             </span>
-                                                            <span>
-                                                                /{{$product->unit_name}}
-                                                            </span>
                                                         </p>
                                                     </div>
 
                                                     <div class="short-description" style="margin-top : 20px;">
-                                                        <div class="sku" style="color: #777; font-size: 16px;">
-                                                            @if(strlen($product->description) > 500)
-                                                            {!!substr($product->description, 0, 500)!!}...
-                                                            @else
-                                                            {!!$product->description!!}
-                                                            @endif
-                                                        </div>
-
                                                         @if($product->quantity > 0)
                                                         <div style="width:100px; padding : 3px 3px; background:#6df31a; color:#fff; font-weight:bold; font-size:12px; text-transform:uppercase; text-align:center;">
                                                             Còn hàng
@@ -136,60 +121,20 @@ Chi tiết sản phẩm - Clothes Store
                                                     </div>
                                                     <div class="box-collateral-content" style="text-align:justify; line-height:30px;">
                                                         <div class="std">
-                                                            <strong>
-                                                                <span>1. Mô tả sản phẩm: </span>
-                                                            </strong>
                                                             <p>{!! $product->description !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>2. Thành phần: </span>
-                                                            </strong>
-                                                            <p>{!! $product->active !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>3. Công dụng: </span>
-                                                            </strong>
-                                                            <p>{!! $product->effect !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>4. Đối tượng sử dụng: </span>
-                                                            </strong>
-                                                            <p>{!! $product->object !!}</p>
-                                                            <br />
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>5. Cách sử dụng: </span>
-                                                            </strong>
-                                                            <p>{!! $product->frequence !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>6. Quy cách đóng gói: </span>
-                                                            </strong>
-                                                            <p>{!! $product->packed !!}</p>
-                                                        </div>
-                                                        <div class="std">
-                                                            <strong>
-                                                                <span>7. Bảo quản: </span>
-                                                            </strong>
-                                                            <p>{!! $product->maintain !!}</p>
                                                         </div>
                                                     </div>
                                                 </div><!-- /.box-collateral -->
 
                                                 <div class="box-collateral  em-line-01">
                                                     <div class="em-block-title">
-                                                        <h2>Nhà sản xuất</h2>
+                                                        <h2>Thương hiệu</h2>
                                                     </div>
                                                     <div class="box">
                                                         <div id="em-related" class="block-content">
                                                             <div class="std">
                                                                 <strong>
-                                                                    <span>1. Nhà sản xuất: {!! $product->manufacturer_name !!}</span>
+                                                                    <span>1. Thương hiệu: {!! $product->brand_name !!}</span>
                                                                 </strong>
                                                             </div>
                                                             <div class="products-grid mini-products-list em-related-slider " id="block-related" style="margin-top : 20px;">

@@ -7,7 +7,7 @@
     <title>
         @yield('title')
     </title>
-    <meta name="description" content="Đến với mọi cửa hàng của Clothes Store, bạn đều được trải nghiệm và mua sắm những sản phẩm chất lượng cao, uy tín hàng đầu trên thị trường chăm sóc sức khỏe">
+    <meta name="description" content="Đến với mọi cửa hàng của Fashion Store, bạn đều được trải nghiệm và mua sắm những sản phẩm chất lượng cao, uy tín hàng đầu trên thị trường chăm sóc sức khỏe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="HTMLCooker">
 
@@ -571,7 +571,7 @@
                                                     Giấy phép ĐKKD số 01A8023039 cấp ngày 27 - 12 - 2020
                                                 </p>
                                                 <p style="text-align : center; color: #ffffff;">
-                                                    Phụ trách CM : Lê Thị Hương
+                                                    Chủ cửa hàng : Lê Thị Hương
                                                 </p>
                                                 <p style="text-align : center; color: #ffffff;">
                                                     Địa chỉ : Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội
@@ -732,7 +732,7 @@
                             <div class="row">
                                 <div class="col-sm-24">
                                     <div class="em-footer-address">
-                                        <address class="f-left">&copy; Bản quyền thuộc về Clothes Store</address>
+                                        <address class="f-left">&copy; Bản quyền thuộc về Fashion Store</address>
                                     </div>
                                 </div>
                             </div>
@@ -769,7 +769,7 @@
     </script>
 
     <!-- Your customer chat code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="112898516810168" theme_color="#0000FF" logged_in_greeting="Xin chào, Clothes Store có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, Clothes Store có thể giúp gì cho bạn?">
+    <div class="fb-customerchat" attribution=setup_tool page_id="112898516810168" theme_color="#0000FF" logged_in_greeting="Xin chào, Fashion Store có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, Fashion Store có thể giúp gì cho bạn?">
     </div>
 </body>
 
@@ -903,7 +903,7 @@
 </script>
 
 <script type="text/javascript" src="{{asset('js/fuse.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/searching-canhdominich.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/searching-v1.js')}}"></script>
 
 <script type="text/javascript">
     $('.mini-btn-login').click(function() {

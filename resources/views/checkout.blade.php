@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 
 @section('title')
-Thanh toán - Clothes Store
+Thanh toán - Fashion Store
 @endsection
 
 @section('css')

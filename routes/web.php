@@ -40,10 +40,10 @@ Route::post('/create/account', 'Customer\RegisterController@createAccount');
 Route::get('/search', 'Customer\SearchController@search');
 
 // cua hang --> update
-Route::get('/cua-hang/bo-sung-vitamin-khoang-chat', 'Customer\VitaminProductController@vitaminProduct');
-Route::get('/cua-hang/nuoc-tang-luc-giai-khat', 'Customer\EnergyProductController@energyProduct');
-Route::get('/cua-hang/giau-chat-xo-tieu-hoa', 'Customer\FiberProductController@fiberProduct');
-Route::get('/cua-hang/chuc-nang-dac-biet', 'Customer\SpecialProductController@specialProduct');
+Route::get('/cua-hang/bo-sung-vitamin-khoang-chat', 'Customer\WomenProductController@vitaminProduct');
+Route::get('/cua-hang/nuoc-tang-luc-giai-khat', 'Customer\MenProductController@energyProduct');
+Route::get('/cua-hang/giau-chat-xo-tieu-hoa', 'Customer\KidProductController@fiberProduct');
+Route::get('/cua-hang/chuc-nang-dac-biet', 'Customer\OtherProductController@specialProduct');
 
 // chi tiet san pham --> update
 Route::get('/san-pham/{slug}', 'Customer\HomeController@productDetail');
@@ -190,7 +190,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'CheckAdmin'], function () {
 	Route::put('/brand/{id}', 'ManufactureController@update');
 	Route::post('/brand', 'ManufactureController@store');
 	Route::get('/new/brand', function () {
-		return view('brand.new_manufacturer');
+		return view('brand.new_brand');
 	});
 	Route::delete('/brand/{id}', 'ManufactureController@destroy');
 

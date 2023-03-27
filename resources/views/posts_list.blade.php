@@ -4,7 +4,7 @@
 @if(isset($title))
 {{$title}}
 @else
-Tin tức- Clothes Store
+Tin tức- Fashion Store
 @endif
 @endsection
 

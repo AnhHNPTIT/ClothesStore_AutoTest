@@ -2,7 +2,7 @@
 
 
 @section('title')
-Đăng nhập - Clothes Store
+Đăng nhập - Fashion Store
 @endsection
 
 @section('home')
