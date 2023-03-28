@@ -24,7 +24,7 @@
                             
                             <div class="col-sm-12" style="line-height : 28px; padding-top : 25px;">
                                 <div class="em-maps-wrapper" style="margin-b : 25px; padding-bottom : 25px;">
-                                    <h1>Cửa hàng thưc phẩm chức năng Fashion Store</h1>
+                                    <h1>Cửa hàng bán quần áo Fashion Store</h1>
                                 </div>
 
                                 <address><span class="fa fa-map-marker secondary2">&nbsp;</span>Địa chỉ: Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội </address>
