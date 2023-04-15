@@ -161,9 +161,9 @@
 						behavior: 'smooth'
 					});
 
-					setTimeout(function() {
-						window.location.href = "/";
-					}, 800);
+					// setTimeout(function() {
+					// 	window.location.href = "/";
+					// }, 800);
 				}
 				if (response.is === 'unsuccess') {
 					$(".unsuccess-mesage").find("ul").html('');
