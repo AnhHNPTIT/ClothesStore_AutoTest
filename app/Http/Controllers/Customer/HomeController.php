@@ -41,7 +41,7 @@ class HomeController extends Controller
         $product = DB::table('products')
             ->select(
                 'products.*',
-                'brands.name as brand_name',
+                'brands.name as brand_name'
             )
             ->join('brands', 'brands.id', '=', 'products.brand_id')
             ->where('products.slug', $slug)
